@@ -1,0 +1,180 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #FAF3E0; /* Bone White */
+    color: #800000; /* Dark Maroon */
+    text-align: justify; /* Rata kiri kanan */
+}
+
+/* Header */
+header {
+    background-color: #8B0000; /* Dark Red */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FAF3E0; /* Bone White */
+    text-decoration: none;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FAF3E0; /* Bone White */
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #FFD700; /* Gold for hover */
+}
+
+.top-btn .nav-btn {
+    background-color: #8B0000; /* Dark Red */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.top-btn .nav-btn:hover {
+    background-color: #A52A2A; /* Brown for hover */
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    flex-direction: column; /* Change to column layout */
+}
+
+.home-content {
+    max-width: 1350px;
+}
+
+.home-img img {
+    width: 1350px; /* Ukuran gambar */
+    height: auto; /* Menjaga rasio aspek */
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #800000; /* Dark Maroon */
+    font-size: 24px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    padding: 40px 20px;
+    flex-direction: column; /* Ensure column layout */
+    align-items: center; /* Center align items */
+}
+
+.about-img img {
+    width: 1550px; /* Ukuran gambar */
+    height: auto; /* Menjaga rasio aspek */
+}
+
+.about-content {
+    max-width: 1550px;
+    margin-top: 20px; /* Add margin to separate text from image */
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 50px 20px;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row {
+    background-color: #edece8; 
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(30% - 20px); /* 3 kolom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.row img {
+    width: 100%; /* Responsif */
+    height: auto; /* Menjaga rasio aspek */
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-box input,
+textarea {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+    background-color: #8B0000; /* Dark Red */
+    text-align: center;
+    padding: 20px;
+    color: #FAF3E0; /* Bone White */
+}
+
+.footer .social a {
+    margin: 0 10px;
+    color: #FAF3E0; /* Bone White */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items:
